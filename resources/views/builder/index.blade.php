@@ -12,9 +12,9 @@
     </x-slot:icon>
 
     <div class="flex flex-col gap-4">
-        @php $options = \TomatoPHP\TomatoCategory\Models\Type::where('for', $for)->where('type', $type)->get(); @endphp
+        @php $options = \Modules\TomatoCategory\App\Models\Type::where('for', $for)->where('type', $type)->get(); @endphp
         @if(count($options))
-            <x-splade-table :for="(new \TomatoPHP\TomatoCategory\Tables\TypeTable(\TomatoPHP\TomatoCategory\Models\Type::query()->where('for', $for)->where('type', $type), true))">
+            <x-splade-table :for="(new \Modules\TomatoCategory\App\Tables\TypeTable(\Modules\TomatoCategory\App\Models\Type::query()->where('for', $for)->where('type', $type), true))">
                 <x-splade-cell color>
                     <x-tomato-admin-row table type="color" :value="$item->color" />
                 </x-splade-cell>

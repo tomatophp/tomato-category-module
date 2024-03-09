@@ -8,7 +8,7 @@
         "sp": "Manage category\/tags\/types for any model with splade\/tomato PHP"
     },
     "keywords": [],
-    "priority": 0,
+    "priority": 1,
     "providers": [
         "Modules\\TomatoCategory\\App\\Providers\\TomatoCategoryServiceProvider"
     ],
